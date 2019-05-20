@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mars Mission</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron test-center">
+            <h1>Mission to Mars</h1>
+            <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Click to scrape info!</a></p>
+        </div>
+        <!-- Mars Info -->
+        <div class="row" id="mars-info">
+            <div class="col-md-12">
+                <h4 class="heading">{{mars_info.news_title}}</h4>
+                <small>{{mars_info.news_paragraph}}</small>
+                <br>
+                <a href="{{mars_info.Featured_Image}}">See the featured image here!</a>
+                <br>
+                <h4>Mars' Weather Update from Twitter: </h4>
+                <small>{{mars_info.mars_weather}}</small>
+                <br>
+                <br>
+                <h4>Below is a list of urls for some cool photos of Mars' hemisphere</h4>
+                <small>{{mars_info.hemisperes_urls}}</small>
+                
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
